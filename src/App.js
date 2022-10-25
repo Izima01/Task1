@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfileSection from './ProfileSection';
+import LinksData from './Assets/LinksData';
+import Link from './Link';
 
 function App() {
+  // console.log(LinksData);
+  const renderLinks = LinksData.map(({ name, link, id }, index) => {
+    return (
+      <Link name={name} link={link} id={id} key={index} />
+    )
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileSection />
+      <div className="links">
+        {renderLinks}
+      </div>
     </div>
   );
 }
