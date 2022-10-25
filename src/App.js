@@ -1,7 +1,9 @@
 import './App.css';
-import ProfileSection from './ProfileSection';
+import ProfileSection from './Components/ProfileSection';
 import LinksData from './Assets/LinksData';
-import Link from './Link';
+import Link from './Components/Link';
+import Socials from './Components/Socials';
+import Footer from './Components/Footer';
 
 function App() {
   // console.log(LinksData);
@@ -17,6 +19,8 @@ function App() {
       <div className="links">
         {renderLinks}
       </div>
+      <Socials />
+      <Footer />
     </div>
   );
 }

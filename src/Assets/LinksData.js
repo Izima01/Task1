@@ -4,7 +4,7 @@ const LinksData = [
     {
         name: "Twitter Link",
         id: "twitterLink",
-        link: ""
+        link: "https://twitter.com/IzimaObisike?t=dFGwtlgwtdv4xojKu13QCw&s=09"
     },
     {
         name: "Zuri Team",

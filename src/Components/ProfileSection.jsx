@@ -1,5 +1,5 @@
 import React from 'react'
-import picture from './Assets/dp.jpg'
+import picture from '../Assets/dp.jpg'
 import './ProfileSection.css'
 
 const ProfileSection = () => {
