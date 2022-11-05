@@ -30,11 +30,6 @@ const LinksData = [
         name: "Design Books",
         id: "book__design",
         link: "https://books.zuri.team/design-rules"
-    },
-    {
-        name: "Contact Me",
-        id: "contact",
-        link: "/contact"
     }
 ]
 
