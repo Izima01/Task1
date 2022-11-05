@@ -106,7 +106,7 @@ textarea::placeholder {
     margin-top: 24px;
 }
 
-#check {
+#agree {
     display: inline-block;
     width: unset;
     padding: 0;
@@ -116,7 +116,7 @@ textarea::placeholder {
     border-radius: 6px;
 }
 
-#check:checked {
+#agree:agreeed {
     /* background: white; */
     fill: white;
     border: 1px solid #1570EF;

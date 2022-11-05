@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Footer from '../Components/Footer';
 import InputGroup from '../Components/InputGroup';
 import './Contact.css'
 
 const Contact = () => {
+    const submitRef = useRef();
     const initialValue = {
         firstName: "",
         lastName: "",
@@ -30,7 +30,9 @@ const Contact = () => {
     };
 
     useEffect(() => {
-        // console.log(errorList);
+        errorList.length == 0
+            ? submitRef.current.addAttribute('disabled', true) 
+            : submitRef.current.removeAttribute('disabled');
     }, [errorList]);
 
     const handleSubmit = (e) => {
@@ -99,7 +101,7 @@ const Contact = () => {
                 <div className='d-flex'>
                     <input
                         type="checkbox"
-                        id='check'
+                        id='agree'
                         name='agree'
                         className={errorList.includes('agree') ? 'errorInput' : ''}
                         value={agree}
@@ -108,7 +110,7 @@ const Contact = () => {
                     <label htmlFor="agree" id='agree'>You agree to providing your data to {name} who may contact you.</label>
                     <p className='error'>{errorList.includes('agree') ? 'You have to agree to provide your data' : ''}</p>
                 </div>
-                <button type='submit' id='btn_submit' onClick={handleSubmit}>Send Message</button>
+                <button type='submit' id='btn_submit' ref={submitRef} disabled onClick={handleSubmit}>Send Message</button>
             </form>
             <Footer />
         </div>
