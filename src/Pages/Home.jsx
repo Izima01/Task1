@@ -19,7 +19,6 @@ const Home = () => {
             <div className="links">
                 {renderLinks}
             </div>
-            <NavLink to='/contact' id='contact'>Contact</NavLink>
             {/* <NavLink to='/contact'  /> */}
             <Socials />
             <Footer />
