@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import Footer from '../Components/Footer';
 import InputGroup from '../Components/InputGroup';
 import './Contact.css'
 
@@ -109,6 +110,7 @@ const Contact = () => {
                 </div>
                 <button type='submit' id='btn_submit' onClick={handleSubmit}>Send Message</button>
             </form>
+            <Footer />
         </div>
     )
 }
