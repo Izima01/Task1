@@ -1,0 +1,132 @@
+.container {
+    margin: 120px 25%;
+    border: 5px solid red;
+    text-align: start;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 ~ p {
+    color: #475467;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+form {
+    margin-top: 48px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #D0D5DD;
+}
+
+input::placeholder {
+    color: #667085;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 14px;
+    border: 1px solid #D0D5DD;
+}
+
+textarea::placeholder {
+    color: #667085;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+#check {
+    display: inline-block;
+    width: unset;
+    padding: 0;
+    border-radius: 8px;
+}
+
+#agree {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+    font-weight: 500;
+}
+
+#submit {
+    width: 100%;
+    background-color: #1570EF;
+    border: 1px solid #1570EF;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 150px 10% 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        margin: 150px 4% 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        margin: 150px 0% 0;
+    }
+}
