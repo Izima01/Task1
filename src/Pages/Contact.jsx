@@ -30,7 +30,7 @@ const Contact = () => {
     };
 
     useEffect(() => {
-        errorList.length == 0
+        errorList.length === 0
             ? submitRef.current.addAttribute('disabled', true) 
             : submitRef.current.removeAttribute('disabled');
     }, [errorList]);
